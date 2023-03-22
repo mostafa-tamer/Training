@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="exerciseViewModel"
+            type="com.example.training.ExerciseViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ExerciseFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sets_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sets Number: 0"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sets_break"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Break Between Sets: 0"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/counts_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counts Number: 0"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/count_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count Duration: 0"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/counts_break"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Break Between Counts: 0"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Active!"
+                android:textColor="@color/dark_blue"
+                android:textSize="55dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/remaining_sets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining Sets: 0"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/remaining_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining Counts: 0"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="0"
+                android:textColor="@color/dark_blue"
+                android:textSize="75dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_shape"
+                android:padding="15dp"
+                android:text="Reset"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

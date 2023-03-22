@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.training.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <argument
+            android:name="hi"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.training.ExerciseFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_exercise">
+
+        <argument
+            android:name="setsNumber"
+            app:argType="long" />
+        <argument
+            android:name="setsBreak"
+            app:argType="long" />
+        <argument
+            android:name="countsNumber"
+            app:argType="long" />
+        <argument
+            android:name="countDuration"
+            app:argType="long" />
+        <argument
+            android:name="countsBreak"
+            app:argType="long" />
+
+    </fragment>
+</navigation>

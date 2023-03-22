@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Training"
+        android:textColor="@color/dark_blue"
+        android:textSize="55dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/numberOfSets"
+        style="@style/edit_text"
+        android:hint="Number of sets" />
+
+    <EditText
+        android:id="@+id/sets_break"
+        style="@style/edit_text"
+        android:hint="Break between sets" />
+
+    <EditText
+        android:id="@+id/counts_in_each_set"
+        style="@style/edit_text"
+        android:hint="Counts In Each Set" />
+
+    <EditText
+        android:id="@+id/count_duration"
+        style="@style/edit_text"
+        android:hint="Count Duration" />
+
+    <EditText
+        android:id="@+id/counts_break"
+        style="@style/edit_text"
+        android:hint="Break between Counts" />
+
+
+    <Button
+        android:id="@+id/button"
+        style="@style/edit_text"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded_shape"
+        android:padding="15dp"
+        android:text="Start" />
+
+</LinearLayout>
